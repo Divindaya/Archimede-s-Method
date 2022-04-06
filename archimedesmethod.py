@@ -1,5 +1,23 @@
+##
+# Author - Divine Badibanga, March 2022
+# Additional credits to Frenki Myteveli
+##
 import math
 
+##
+# This function calculates an upper and lower bound for pi based on doubling iterations
+# of a 6-gon
+#
+# parameters
+# n0 : int
+# the initial number of sides of the gon, this function is specific to an initial value of 6
+# side1 : int
+# length of one side of the gon, this mathematical proof is based on the unit circle so this holds a value of 1
+# n : int
+# constant and duplicate value of n0 used as a sentinal variable
+# m : int
+# constant used to calculate the end case
+##
 def archimethod(n0, side1, n, m):
     radius = 1
     a = math.sqrt(radius - (side1/2)**2)
